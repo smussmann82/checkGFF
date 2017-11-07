@@ -17,9 +17,9 @@ class LIN():
 	def linearSearch(self):
 		for line in self.l:
 			temp = line.split()
-			if( (self.e < temp[4] and self.e > temp[3] ) or ( self.s < temp[4] and self.s > temp[3] ) ):
-				print("Found")
+			if( (int(self.e) < int(temp[4]) and int(self.e) > int(temp[3]) ) or ( int(self.s) < int(temp[4]) and int(self.s) > int(temp[3]) ) ):
+				#print("Found")
 				print(line)
-			else:
-				print("Not Found")
+			#else:
+				#print("Not Found")
 
