@@ -32,3 +32,6 @@ class GFF():
 			accn = temp[0].split('.')
 			self.features[accn[0]].append(line)
 		#print(self.features)
+
+	def getList(self,accn):
+		return self.features[accn]
